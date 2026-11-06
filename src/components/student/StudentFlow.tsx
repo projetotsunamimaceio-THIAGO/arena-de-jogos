@@ -90,10 +90,9 @@ export const StudentFlow: React.FC<StudentFlowProps> = ({ onEnterArena }) => {
   // Step 4: Validate PIN & Enter Room
   const handleEnterRoom = (e: React.FormEvent) => {
     e.preventDefault();
-    const room = rooms[selectedRoomId];
+    let room = rooms[selectedRoomId];
     if (!room) {
-      showError('Sala não encontrada!');
-      return;
+      room = createDefaultRoom(selectedRoomId, selectedRoomId === 'SALA 1' ? '1234' : selectedRoomId === 'SALA 2' ? '2468' : selectedRoomId === 'SALA 3' ? '3691' : '4826');
     }
 
     if (!room.active) {
