@@ -1,0 +1,6 @@
+{
+  "name": "ARENA DE JOGOS",
+  "description": "Plataforma gamer e educativa em tempo real para professores e alunos, com salas, placares, importação de planilhas e 5 jogos interativos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
